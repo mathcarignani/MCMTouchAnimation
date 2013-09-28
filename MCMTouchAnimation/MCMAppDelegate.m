@@ -7,6 +7,7 @@
 //
 
 #import "MCMAppDelegate.h"
+#import "MCMMainViewController.h"
 
 @implementation MCMAppDelegate
 
@@ -15,6 +16,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    MCMMainViewController *mainVC = [[MCMMainViewController alloc]init];
+    self.window.rootViewController = mainVC;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

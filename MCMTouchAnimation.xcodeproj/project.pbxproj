@@ -19,6 +19,10 @@
 		C76E594A17F6556000E078C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76E593217F6556000E078C9 /* UIKit.framework */; };
 		C76E595217F6556000E078C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C76E595017F6556000E078C9 /* InfoPlist.strings */; };
 		C76E595417F6556000E078C9 /* MCMTouchAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C76E595317F6556000E078C9 /* MCMTouchAnimationTests.m */; };
+		C76E596117F6559E00E078C9 /* MCMCircleGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = C76E596017F6559E00E078C9 /* MCMCircleGradient.m */; };
+		C76E596517F656DD00E078C9 /* MCMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C76E596317F656DD00E078C9 /* MCMMainViewController.m */; };
+		C76E596617F656DD00E078C9 /* MCMMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C76E596417F656DD00E078C9 /* MCMMainViewController.xib */; };
+		C76E596D17F6626800E078C9 /* escudo.png in Resources */ = {isa = PBXBuildFile; fileRef = C76E596C17F6626800E078C9 /* escudo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		C76E594F17F6556000E078C9 /* MCMTouchAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MCMTouchAnimationTests-Info.plist"; sourceTree = "<group>"; };
 		C76E595117F6556000E078C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C76E595317F6556000E078C9 /* MCMTouchAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCMTouchAnimationTests.m; sourceTree = "<group>"; };
+		C76E595F17F6559E00E078C9 /* MCMCircleGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMCircleGradient.h; sourceTree = "<group>"; };
+		C76E596017F6559E00E078C9 /* MCMCircleGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMCircleGradient.m; sourceTree = "<group>"; };
+		C76E596217F656DD00E078C9 /* MCMMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMMainViewController.h; sourceTree = "<group>"; };
+		C76E596317F656DD00E078C9 /* MCMMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMMainViewController.m; sourceTree = "<group>"; };
+		C76E596417F656DD00E078C9 /* MCMMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MCMMainViewController.xib; sourceTree = "<group>"; };
+		C76E596C17F6626800E078C9 /* escudo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = escudo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +117,9 @@
 		C76E593417F6556000E078C9 /* MCMTouchAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				C76E596717F65FD200E078C9 /* Resources */,
+				C76E595E17F6557800E078C9 /* Controller */,
+				C76E595D17F6556B00E078C9 /* Model */,
 				C76E593D17F6556000E078C9 /* MCMAppDelegate.h */,
 				C76E593E17F6556000E078C9 /* MCMAppDelegate.m */,
 				C76E594017F6556000E078C9 /* Images.xcassets */,
@@ -142,6 +155,33 @@
 				C76E595017F6556000E078C9 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C76E595D17F6556B00E078C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C76E595F17F6559E00E078C9 /* MCMCircleGradient.h */,
+				C76E596017F6559E00E078C9 /* MCMCircleGradient.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C76E595E17F6557800E078C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C76E596217F656DD00E078C9 /* MCMMainViewController.h */,
+				C76E596317F656DD00E078C9 /* MCMMainViewController.m */,
+				C76E596417F656DD00E078C9 /* MCMMainViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C76E596717F65FD200E078C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C76E596C17F6626800E078C9 /* escudo.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +260,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76E596617F656DD00E078C9 /* MCMMainViewController.xib in Resources */,
 				C76E593917F6556000E078C9 /* InfoPlist.strings in Resources */,
 				C76E594117F6556000E078C9 /* Images.xcassets in Resources */,
+				C76E596D17F6626800E078C9 /* escudo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +283,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76E593F17F6556000E078C9 /* MCMAppDelegate.m in Sources */,
+				C76E596117F6559E00E078C9 /* MCMCircleGradient.m in Sources */,
 				C76E593B17F6556000E078C9 /* main.m in Sources */,
+				C76E596517F656DD00E078C9 /* MCMMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
